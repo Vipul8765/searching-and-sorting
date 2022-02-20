@@ -1,0 +1,17 @@
+void bubbleSort(int *input, int size)
+{
+    //Write your code here
+    int i, j, temp;  
+   for(i = 0; i < size; i++)    
+    {    
+      for(j = i+1; j < size; j++)    
+        {    
+            if(input[j] < input[i])    
+            {    
+                temp = input[i];    
+                input[i] = input[j];    
+                input[j] = temp;     
+            }     
+        }     
+    }
+}
